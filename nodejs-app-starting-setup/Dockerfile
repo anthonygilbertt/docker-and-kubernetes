@@ -1,12 +1,12 @@
 # ------------------------------------------
 # Image Build
 # ------------------------------------------
-FROM node:14
+FROM node
 WORKDIR /app
-COPY . ./app
+COPY . /app
 RUN npm install
 EXPOSE 80
 # ------------------------------------------
 # Container commands to run
 # ------------------------------------------
-CMD ["node", "server.js"] 
+CMD ["node", "server.js"]
